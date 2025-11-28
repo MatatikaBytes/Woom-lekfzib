@@ -1,0 +1,31 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-veeqo",
+  "namespace": "tap_veeqo",
+  "variant": "matatika",
+  "label": "Veeqo",
+  "docs": "https://www.matatika.com/data-details/tap-veeqo/",
+  "repo": "https://github.com/Matatika/tap-veeqo",
+  "pip_url": "git+https://github.com/Matatika/tap-veeqo.git@v0.3.0",
+  "description": "Veeqo is a cloud-based inventory and order management software for e-commerce businesses.\n\nE-commerce businesses use Veeqo manage their inventory, orders, and shipping across multiple  sales channels. It has basic features such as inventory levels, low stock alerts, and management of purchase orders. The software also allows businesses to manage their orders from multiple sales channels in one place, print shipping labels, and automatically update tracking information. Through the Veeqo API, integrations with a variety of e-commerce  platforms, marketplaces, and shipping carriers are supported. Veeqo also provides some out of  the box analytics and reporting, enough for many businesses to gain basic insights into their  sales performance and inventory trends.\n\nMatatika extracts data from the Veeqo API to enable more sophisticated businesses to streamline  their operations, reduce errors, and improve their overall efficiency.  Our clients tell us its a game changer to have a single space where advanced sales performance and inventory trends are analyzed.  Some of the key use case we solve include:\n\n***Automated Industry Sales Reporting***\n\nProducing standard 3rd party industry sales reports is a breeze.  Matatika automatically maps  product sales to user defined categories.  Saving hours each month for our clients.\n\nVeeqo API streams:  Orders, Products, Tags\n\n***Tax liabilities and Sales accounts***\n\nMatatika automates the reconciliation and update of your accounting system with user defined sales accounts that need to respect zero rated sales, or sales in user defined categories or departments.\n\nVeeqo API streams:  Orders, Products, Suppliers, Tags\n\n***Forecasting***\n\nWhether its sales, inventory, or marketing effectiveness that you need, Matatika provides advanced  insights about your business from a single trusted space.\n\nVeeqo API streams:  Orders, Returns, Allocations, Products, Purchase Orders, Suppliers, Company, Warehouses, Customers, Stores, Delivery Methods, Shipments, Stock Entries, Tags\n\n### Prerequisites\nTo obtain an API key for Veeqo, follow these steps:\n\n1. Log in to your Veeqo account.\n2. Click on your profile icon in the top right corner of the screen.\n3. Select \"Settings\" from the dropdown menu.\n4. Click on \"API\" in the left-hand menu.\n5. Click on the \"Generate new API key\" button.\n6. Give your API key a name and select the permissions you want to grant.\n7. Click on the \"Generate API key\" button.\n8. Your new API key will be displayed on the screen.",
+  "logo_url": "/assets/images/datasource/tap-veeqo.png",
+  "capabilities": [
+    "about",
+    "stream-maps",
+    "discover",
+    "catalog",
+    "state"
+  ],
+  "settings": [
+    {
+      "name": "api_key",
+      "kind": "string",
+      "label": "API key",
+      "description": "A unique identifier used to authenticate and authorize requests to the Veeqo API.",
+      "hidden": false,
+      "sensitive": true,
+      "required": "true",
+      "protected": false
+    }
+  ]
+}

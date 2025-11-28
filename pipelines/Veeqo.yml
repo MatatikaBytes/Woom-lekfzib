@@ -1,7 +1,8 @@
 version: pipelines/v0.1
 name: Veeqo
-timeout: 0
-max_retries: 0
+schedule: 0 0 7 * * *
+timeout: 3600
+max_retries: 2
 data_components:
 - tap-veeqo
 - Warehouse

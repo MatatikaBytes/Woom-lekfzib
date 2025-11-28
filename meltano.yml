@@ -10,6 +10,9 @@ plugins:
   - name: tap-veeqo
     variant: matatika
     pip_url: git+https://github.com/Matatika/tap-veeqo.git@v0.3.0
+    metadata:
+      products:
+        replication-method: FULL_TABLE
   loaders:
   - name: target-postgres
     variant: matatika
